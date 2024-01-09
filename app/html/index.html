@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <script src="https://kit.fontawesome.com/81b6822a72.js" crossorigin="anonymous"></script>
+        <title>COMP1537 Assignment 6</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <nav>
+                <a href="#" class="active"><i class="fa-solid fa-house fa-xl"></i>&nbsp;&nbsp;Home</a>
+                <a href="#"><i class="fa-solid fa-gamepad fa-xl"></i>&nbsp;&nbsp;Games</a>
+                <a href="#"><i class="fa-solid fa-video fa-xl"></i>&nbsp;&nbsp;Anime</a>
+                <a href="#"><i class="fa-solid fa-dice-d20 fa-xl"></i>&nbsp;&nbsp;Bandai</a>
+                <a href="#"><i class="fa-solid fa-check fa-xl"></i>&nbsp;&nbsp;Gunpla</a>
+            </nav>
+            <header>
+                <img id="logo" alt="logo" src="/img/logo2.svg" />
+                <h1>GUNDAM</h1>
+                <h2>The Witch from Mercury</h2>
+            </header>
+            <div class="image">
+                <figure>
+                    <img id="mainpic" alt="wfm_s2_poster" src="/img/pic1.jpg" />
+                    <figcaption>
+                        <p id="figcap1">The Witch from Mercury Season 2 Poster</p>
+                        <p id="figcap2">Aired Apr 9, 2023 to Jul 2, 2023</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="button" id="picbutton1"><a href="#">
+                    <i class="fa-brands fa-youtube fa-2xl"></i>&nbsp;
+                    <b>Season 1 Opening</b>
+                    <br><br> "祝福" by YOASOBI</a>
+            </div>
+            <div class="button" id="picbutton2"><a href="#">
+                    <i class="fa-brands fa-youtube fa-2xl"></i>&nbsp;
+                    <b>Season 1 Ending</b>
+                    <br><br> "君よ 気高くあれ" by シユイ</a>
+            </div>
+            <div class="button" id="picbutton3"><a href="#">
+                    <i class="fa-brands fa-youtube fa-2xl"></i>&nbsp;
+                    <b>Season 2 Opening</b>
+                    <br><br> "slash" by yama</a>
+            </div>
+            <div class="button" id="picbutton4"><a href="#">
+                    <i class="fa-brands fa-youtube fa-2xl"></i>&nbsp;
+                    <b>Season 2 Ending</b>
+                    <br><br> "Red:birthmark" by Aina The End</a>
+            </div>
+
+            <aside>
+                <br>
+                <i>Share with your friends on Twitter!</i>
+                <br>
+
+                <div class="sidebutton"><a href="#">
+                        <i class="fa-brands fa-twitter fa-2xl"></i></a>
+                </div>
+
+                <br>
+                <i>Share with your followers on Instagram!</i>
+                <br>
+
+                <div class="sidebutton"><a href="#">
+                        <i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </div>
+
+                <h3>Tweets</h3>
+                <div id="tweets-json"></div>
+
+                
+            </aside>
+
+            <div id="newsletter">
+                <i id="email1" class="fa-solid fa-envelope fa-2xl" style="color: #252525;"></i> &nbsp;
+                Don't miss a beat on the latest news on Mobile Suite Gundam The Witch from Mercury! Sign up for the
+                amazing newsletter!
+                <br>
+                We will have the inside scoop for all things related to the Ad Stella timeline!
+            </div>
+
+            <div id="form">
+                <form action="/submit">
+                    <br>
+                    <input id="email" type="email" placeholder="yourname@example.com" autofocus="autofocus" />
+                    <input id="submit" name="submit" value="Subscribe" type="submit" />
+                </form>
+            </div>
+
+            <div id="piccontent1"><img alt="Calibarn" src="/img/pic2.png" /></div>
+            <section id="content1">
+                <h3>X-EX01 Calibarn</h3>
+                <!-- Calibarn AJAX calls start -->
+                <div class="loadout">
+                    <div class="ajax_content">
+                        <p>Get Calibarn Armaments (HTML)</p>
+                        <input id="calibarnhtml" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="calibarn-html"></div>
+                    </div>
+
+                    <div class="ajax_content">
+                        <p>Get Calibarn Armaments (JSON)</p>
+                        <input id="calibarnjson" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="calibarn-json"></div>
+                    </div>
+                </div>
+                <!-- Calibarn AJAX calls end -->
+                <p>The Vanadis Institute developed countless prototype units in addition to the Lfrith before the
+                    establishment of GUND FORMAT technology. Calibarn prioritized mobile suit
+                    performance to seek the utmost limits of GUND-ARM capabilities and adopted extreme measures that did
+                    not guarantee the pilot's life protection at all. </p>
+                <p class="left">Find out more details! <a class="links" href="#">Learn More</a></p>
+
+
+            </section>
+
+            <div id="piccontent2"><img alt="Aerial" src="/img/pic3.png" /></div>
+            <section id="content2">
+                <h3>XVX-016 Aerial </h3>
+                <!-- Aerial AJAX calls start -->
+                <div class="loadout">
+                    <div class="ajax_content">
+                        <p>Get Aerial Armaments (HTML)</p>
+                        <input id="aerialhtml" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="aerial-html"></div>
+                    </div>
+
+                    <div class="ajax_content">
+                        <p>Get Aerial Armaments (JSON)</p>
+                        <input id="aerialjson" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="aerial-json"></div>
+                    </div>
+                </div>
+                <!-- Aerial AJAX calls end -->
+                <p>Following the Vanadis Incident, the XGF-02 Gundam Lfrith piloted by Elnora Samaya escaped to Mercury.
+                    Here the Lfrith would be upgraded into a more refined and powerful mobile suit, resulting in the
+                    Gundam Aerial. As the only mobile suit in Mercury the Gundam Aerial, piloted by Suletta Mercury,
+                    would be used by Suletta growing up to undertake various utilitarian missions, including search and
+                    rescue. </p>
+                <p class="left">Find out more details! <a class="links" href="#">Learn More</a></p>
+            </section>
+
+            <div id="piccontent3"><img alt="Pharact" src="/img/pic4.png" /></div>
+            <section id="content3">
+                <h3>FP/A-77 Pharact</h3>
+
+                <!-- Pharact AJAX calls start -->
+                <div class="loadout">
+                    <div class="ajax_content">
+                        <p>Get Pharact Armaments (HTML)</p>
+                        <input id="pharacthtml" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="pharact-html"></div>
+                    </div>
+
+                    <div class="ajax_content">
+                        <p>Get Pharact Armaments (JSON)</p>
+                        <input id="pharactjson" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="pharact-json"></div>
+                    </div>
+                </div>
+                <!-- Pharact AJAX calls end -->
+                <p>Gundam type Mobile Suit developed by Peil Technologies. The Pharact employs new thrusters known as
+                    Blast Boosters, which give the unit the flight capabilities Peil is known for. The GUND FORMAT
+                    also allows it to effectively regulate inertia, enabling it to engage in battle on all three axes
+                    whether in space or under gravity.</p>
+                <p class="left">Find out more details! <a class="links" href="#">Learn More</a></p>
+            </section>
+
+            <div id="piccontent4"><img alt="Schwarzette" src="/img/pic5.png" /></div>
+            <section id="content4">
+                <h3>MDX-0003 Schwarzette </h3>
+
+                <!-- Schwarzette AJAX calls start -->
+                <div class="loadout">
+                    <div class="ajax_content">
+                        <p>Get Schwarzette Armaments (HTML)</p>
+                        <input id="schwarzettehtml" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="schwarzette-html"></div>
+                    </div>
+
+                    <div class="ajax_content">
+                        <p>Get Schwarzette Armaments (JSON)</p>
+                        <input id="schwarzettejson" type="button" value="Show" />
+                        <input class="clear" type="button" value="Hide" />
+                        <div class="ajax-loadout" id="schwarzette-json"></div>
+                    </div>
+                </div>
+                <!-- Schwarzette AJAX calls end -->
+                <p>A mobile suit utilizing the "GUND FORMAT" technology provided by Prospera Mercury. The Schwarzette is
+                    a next-generation concept model, developed as a successor to the MD-0064 Darilbalde. The
+                    intention was to create a mobile suit with greater flexibility, adaptability, and mobility than the
+                    Darilbalde, by further enhancing the AI control system. </p>
+                <p class="left"> Find out more details! <a class="links" href="#">Learn More</a></p>
+            </section>
+
+            <footer>
+                <div class="left">
+                    <small>I have put in over 48 hours on this.</small>
+                    <br>
+                    <small><i>Copyright. <i class="fa-solid fa-copyright"></i>&nbsp;All rights reserved. 2023 - The End
+                            of Time</i></small>
+                </div>
+
+                <div class="right">
+                    <br>
+                    <a href="#">&nbsp;<i class="fa-brands fa-reddit fa-2xl"></i></a> |
+                    <a href="#">&nbsp;<i class="fa-brands fa-x-twitter fa-2xl"></i></a> |
+                    <a href="#">&nbsp;<i class="fa-brands fa-facebook fa-2xl"></i></a>
+                </div>
+            </footer>
+        </div>
+
+
+
+        <script src="js/client.js"></script>
+    </body>
+
+</html>
